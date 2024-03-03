@@ -8,50 +8,58 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css"
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title></title>
   </head>
   <body>
     <div class="weather-app-engine">
-    <header>
-      <form id="search-form">
-        <input class="search-form-input" type="search" placeholder="Enter a city..." required id="search-form-input"/>
-        <input class="search-form-button" type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-              <div class="weather-app-details">
-        <div>
-        <h1 class="city" id="weather-city">San Francisco</h1>
-        <p class="details">
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humidity: <span class="highlight">66%</span>, Wind: <span class="highlight">3.13 km/h</span>
-        </p>
+      <header>
+        <form id="search-form">
+          <input
+            class="search-form-input"
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="search-form-input"
+          />
+          <input class="search-form-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-details">
+          <div>
+            <h1 class="city" id="weather-city"></h1>
+            <p class="details">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <span class="highlight">66%</span>, Wind:
+              <span class="highlight">3.13 km/h</span>
+            </p>
+          </div>
+          <div class="degree-unit-container">
+            <div class="emoji">⛅</div>
+            <div class="degree" id="temperature"></div>
+            <div class="unit">&degC</div>
+          </div>
         </div>
-      <div class="degree-unit-container">
-      <div class="emoji">⛅ </div>
-      <div class="degree">12</div>      
-    <div class="unit">&degC</div>
-    </div>
-    </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/saallyyang" target="_blank"> Sally</a>, code
-      hosted on
-      <a
-        href="https://github.com/saallyyang/Week-7-Vanilla-Weather-Search-Homework"
-        target="_blank"
-        >GitHub</a
-      >
-      and website hosted
-      <a
-        href="https://main--vanilla-weather-search-app.netlify.app/"
-        target="_blank"
-        >on Netlify</a
-      >
-    </footer>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/saallyyang" target="_blank"> Sally</a>, code
+        hosted on
+        <a
+          href="https://github.com/saallyyang/Week-7-Vanilla-Weather-Search-Homework"
+          target="_blank"
+          >GitHub</a
+        >
+        and website hosted
+        <a
+          href="https://main--vanilla-weather-search-app.netlify.app/"
+          target="_blank"
+          >on Netlify</a
+        >
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
